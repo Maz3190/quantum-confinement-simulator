@@ -36,7 +36,18 @@ This repository implements a first-principles computational pipeline designed to
 * **Description**: Compares the exact discrete partition sum ($q_{exact} = \sum e^{-\beta E_n}$) with the continuous classical approximation ($L/\Lambda$). Highlights the quantum freeze-out regime and flags the thermal cutoff threshold ($\Lambda/L \geq 0.1$).
 ![Statistical Mechanics Breakdown](stat_mech_breakdown.png)
 
+
+### 4. Quantum Tunneling in a Symmetric Double-Well Potential
+* **Script**: `double_well_tunneling.py`
+* **Description**: Extends the finite-difference solver to a non-analytical quartic double-well potential ($V(x) = ax^4 - bx^2$), modeling molecular inversion (such as $\text{NH}_3$). Demonstrates non-zero wavefunction probability density inside the classically forbidden central barrier and resolves the resulting symmetric/antisymmetric tunneling doublet splitting ($\Delta E = E_2 - E_1$).
+![Double Well Tunneling](double_well_tunneling.png)
+
 ---
+
+## 🧠 Key Scientific Takeaways
+* **Discretization Convergence**: Log-log error analysis confirms second-order finite-difference convergence ($\mathcal{O}(\Delta x^2)$), reducing ground-state eigenvalue error below $10^{-4}\%$ at $N \ge 500$.
+* **Classical-to-Quantum Crossover**: Dynamic truncation ($N_{\max} = 10\sqrt{k_B T / E_1}$) prevents high-temperature sum saturation and demonstrates that for a $1\text{ amu}$ particle in a $1\text{ m}$ box, quantum level discreteness causes measurable deviation ($>8\%$) from the classical thermal de Broglie integral ($L/\Lambda$) only in the sub-femtoKelvin regime.
+* **Barrier Penetration**: Unlike the infinite well, finite quartic barriers couple localized states across wells, lifting degeneracy into closely spaced tunneling doublets.
 
 ## 🚀 Getting Started & Execution
 
