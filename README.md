@@ -65,3 +65,7 @@ python convergence_study.py
 
 # Run the statistical mechanics analysis
 python stat_mech_analysis.py
+
+# Run the double-well quantum tunneling simulation
+python double_well_tunneling.py
+
