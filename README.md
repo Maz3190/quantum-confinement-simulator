@@ -45,7 +45,7 @@ This repository implements a first-principles computational pipeline designed to
 ---
 
 ## 🧠 Key Scientific Takeaways
-* **Discretization Convergence**: Log-log error analysis confirms second-order finite-difference convergence ($\mathcal{O}(\Delta x^2)$), reducing ground-state eigenvalue error below $10^{-4}\%$ at $N \ge 500$.
+* **Discretization Convergence**: Log-log error analysis confirms second-order finite-difference convergence ( $\mathcal{O}(\Delta x^2)$ ), reducing ground-state eigenvalue error below $10^{-4}\%$ at $N \ge 500$.
 * **Classical-to-Quantum Crossover**: Dynamic truncation ($N_{\max} = 10\sqrt{k_B T / E_1}$) prevents high-temperature sum saturation and demonstrates that for a $1\text{ amu}$ particle in a $1\text{ m}$ box, quantum level discreteness causes measurable deviation ($>8\%$) from the classical thermal de Broglie integral ($L/\Lambda$) only in the sub-femtoKelvin regime.
 * **Barrier Penetration**: Unlike the infinite well, finite quartic barriers couple localized states across wells, lifting degeneracy into closely spaced tunneling doublets.
 
